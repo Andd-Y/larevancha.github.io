@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LA REVANCHA</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">LA REVANCHA</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#reserva">Reserva</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#contactos">contactos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="inicio">
+        <div class="banner">
+            <h1>Bienvenido a La Revancha</h1>
+            <p>El mejor campo sintetico para tus partidos</p>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galeria</h2>
+        <div class="gal">
+           <div style="background-image: url(img/FB_IMG\ 1.jpg);"></div>
+           <div style="background-image: url(img/FB_IMG\ 2.jpg);"></div>
+           <div style="background-image: url(img/FB_IMG\ 3.jpg);"></div>
+           <div style="background-image: url(img/FB_IMG\ 4.jpg);"></div>
+           <div style="background-image: url(img/FB_IMG\ 5.jpg);"></div>
+           <div style="background-image: url(img/FB_IMG\ 6.jpg);"></div>
+           <div style="background-image: url(img/FB_IMG\ 7.jpg);"></div>
+           <div style="background-image: url(img/FB_IMG\ 8.jpg);"></div>
+        </div>
+    </section>
+
+    <section id="reservas">
+        <h2>Reservas</h2>
+        <form action="  " id="reservar">
+            <label for="fecha"></label>
+            <input type="date" id="fecha" name="fecha" required>
+            <label for="hora"></label>
+            <input type="time" id="hora" name="hora" required>
+            <label for="duracion"></label>
+            <input type="number" id="duracion" name="duracion" min="1" max="4" required>
+            <button type="submit">Reservar ahora</button>
+        </form>
+        <div id="calendario">
+
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Alquiler de campo por hora</li>
+            <li>Organizacion de torneos</li>
+            <li>Clases y entrenamientos personalizados</li>
+        </ul>
+        <table>
+            <tr>
+                <th>Servicio</th>
+                <th>Precio</th>
+            </tr>
+            <tr>
+                <td>Alquiler por hora</td>
+                <td>200PEN</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <form action="  " id="contacto-form">
+            <label for="nombre">nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">telefono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+        <div class="info-contacto">
+            <p>Direccion: AV Direccion Falsa</p>
+            <p>Telefono: +51 978 232 092</p>
+            <p>Email: info@larevancha.com</p>
+            <div id="mapa">
+                <!--Aqui va el mapa-->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div id="orden-info">
+
+            <div class="redes-sociales">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+            <div class="info-legal">
+                <a href="#">Terminos y condiciones</a>
+                <a href="#">Politica de privacidad</a>
+            </div>
+        </div>
+        
+        <form action="/reservar" id="reserva-form" method="POST">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Correo electronico</label>
+            <input type="email" id="email" name="email" required>
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <label for="mensaje">Mensaje</label>
+            <textarea name="mensaje" id="mensaje"></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+    
+</html>
