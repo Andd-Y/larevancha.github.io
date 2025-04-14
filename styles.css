@@ -29,7 +29,7 @@ nav ul {
     font-weight: bold;
 }
 .banner {
-    background-image: url("../img/imagen.jpg");
+    background-image: url("imagen.jpg");
     background-size: cover;
     background-position: center;
     padding: 5rem 1rem;
